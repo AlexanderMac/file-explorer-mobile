@@ -1,0 +1,35 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CommonCore\Managers\CommonUtils.cs">
+    <Files>
+      <File FileName="mDroid\App\UI\Explorer\FileEntryListActivity.cs" Line="34" Column="25" />
+      <File FileName="mDroid\App\UI\About\AboutActivity.cs" Line="17" Column="1" />
+      <File FileName="mDroid\App\UI\HomeActivity.cs" Line="37" Column="79" />
+      <File FileName="CommonCore\Managers\CommonUtils.cs" Line="167" Column="12" />
+      <File FileName="mDroid\App\Resources\drawable\ic_tab_explorer.xml" Line="5" Column="12" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="mDroidApp" expanded="True">
+            <Node name="Resources" expanded="True" />
+            <Node name="UI" expanded="True">
+              <Node name="About" expanded="True" />
+              <Node name="Explorer" expanded="True" />
+            </Node>
+          </Node>
+          <Node name="mDroidCore" expanded="True">
+            <Node name="Managers" expanded="True">
+              <Node name="CommonUtils.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.mDroidApp AndroidDeviceId-Debug="emulator-5554" MonoForAntroid.PreferredDevice="5.4in FWVGA" />
+</Properties>

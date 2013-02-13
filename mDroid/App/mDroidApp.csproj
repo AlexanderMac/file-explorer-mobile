@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BE235ADD-E7D2-4D09-B200-FBAE185B00F1}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>droidApp</RootNamespace>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AssemblyName>droidApp</AssemblyName>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <TargetFrameworkVersion>v4.2</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;MonoDroid;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <AndroidSupportedAbis>armeabi,armeabi-v7a,x86</AndroidSupportedAbis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+    <DefineConstants>MonoDroid;</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\About\AboutActivity.cs" />
+    <Compile Include="UI\Explorer\FileEntryListActivity.cs" />
+    <Compile Include="UI\HomeActivity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+    <AndroidResource Include="Resources\layout\FileEntryListItem.axml" />
+    <AndroidResource Include="Resources\drawable\Excel48.png" />
+    <AndroidResource Include="Resources\drawable\Folder48.png" />
+    <AndroidResource Include="Resources\drawable\Image48.png" />
+    <AndroidResource Include="Resources\drawable\PowerPoint48.png" />
+    <AndroidResource Include="Resources\drawable\Undefined48.png" />
+    <AndroidResource Include="Resources\drawable\Word48.png" />
+    <AndroidResource Include="Resources\layout\Home.axml" />
+    <AndroidResource Include="Resources\drawable\ic_tab_about.xml" />
+    <AndroidResource Include="Resources\drawable\ic_tab_explorer.xml" />
+    <AndroidResource Include="Resources\drawable\ic_tab_about_unselected.png" />
+    <AndroidResource Include="Resources\drawable\ic_tab_explorer_selected.png" />
+    <AndroidResource Include="Resources\drawable\ic_tab_explorer_unselected.png" />
+    <AndroidResource Include="Resources\drawable\ic_tab_about_selected.png" />
+    <AndroidResource Include="Resources\drawable\add20.png" />
+    <AndroidResource Include="Resources\drawable\PDF48.png">
+      <DeployService-Deploy>True</DeployService-Deploy>
+      <DeployService-HasPathReferences>True</DeployService-HasPathReferences>
+      <DeployService-UseProjectRelativePath>True</DeployService-UseProjectRelativePath>
+    </AndroidResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\Core\mDroidCore.csproj">
+      <Project>{AE480907-AB6F-4AEE-BE8E-DD17981CDA79}</Project>
+      <Name>mDroidCore</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+</Project>

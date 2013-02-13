@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:d1p1="http://schemas.android.com/apk/res/android"
+    d1p1:layout_width="fill_parent"
+    d1p1:layout_height="fill_parent"
+    d1p1:id="@+id/tabHost1">
+    <LinearLayout
+        d1p1:layout_width="fill_parent"
+        d1p1:layout_height="fill_parent"
+        d1p1:orientation="vertical"
+        d1p1:padding="5dp"
+        d1p1:id="@+id/linearLayout1">
+        <TabWidget
+            d1p1:id="@android:id/tabs"
+            d1p1:layout_width="fill_parent"
+            d1p1:layout_height="wrap_content" />
+        <FrameLayout
+            d1p1:id="@android:id/tabcontent"
+            d1p1:layout_width="fill_parent"
+            d1p1:layout_height="fill_parent"
+            d1p1:padding="5dp" />
+    </LinearLayout>
+</TabHost>

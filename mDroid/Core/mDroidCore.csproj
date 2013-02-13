@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AE480907-AB6F-4AEE-BE8E-DD17981CDA79}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>mDroidCore</RootNamespace>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AssemblyName>mDroidCore</AssemblyName>
+    <TargetFrameworkVersion>v4.2</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;MonoDroid;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+    <DefineConstants>MonoDroid;</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Data\Enums\AlertResults.cs" />
+    <Compile Include="Data\Enums\FileEntryTypes.cs" />
+    <Compile Include="..\..\CommonCore\Data\Objects\FileEntry.cs">
+      <Link>Data\Objects\FileEntry.cs</Link>
+    </Compile>
+    <Compile Include="..\..\CommonCore\Interfaces\ICommonUtils.cs">
+      <Link>Interfaces\ICommonUtils.cs</Link>
+    </Compile>
+    <Compile Include="..\..\CommonCore\Interfaces\IDiskUtils.cs">
+      <Link>Interfaces\IDiskUtils.cs</Link>
+    </Compile>
+    <Compile Include="..\..\CommonCore\Interfaces\IFileEntryManager.cs">
+      <Link>Interfaces\IFileEntryManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\CommonCore\Managers\CommonUtils.cs">
+      <Link>Managers\CommonUtils.cs</Link>
+    </Compile>
+    <Compile Include="..\..\CommonCore\Managers\DiskUtils.cs">
+      <Link>Managers\DiskUtils.cs</Link>
+    </Compile>
+    <Compile Include="..\..\CommonCore\Managers\FileEntryManager.cs">
+      <Link>Managers\FileEntryManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\CommonCore\MgrAccessor.cs">
+      <Link>MgrAccessor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\CommonCore\Interfaces\IBaseManager.cs">
+      <Link>Interfaces\IBaseManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\CommonCore\Managers\BaseManager.cs">
+      <Link>Managers\BaseManager.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup />
+</Project>

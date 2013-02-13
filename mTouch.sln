@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mTouchApp", "mTouch\App\mTouchApp.csproj", "{F11C588E-087F-4101-AD9E-BF3FCADBCCAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mTouchCore", "mTouch\Core\mTouchCore.csproj", "{2F0731BE-904F-4665-A95B-89175F33E8ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F0731BE-904F-4665-A95B-89175F33E8ED}.Ad-Hoc|iPhone.ActiveCfg = Debug|Any CPU
+		{2F0731BE-904F-4665-A95B-89175F33E8ED}.Ad-Hoc|iPhone.Build.0 = Debug|Any CPU
+		{2F0731BE-904F-4665-A95B-89175F33E8ED}.AppStore|iPhone.ActiveCfg = Debug|Any CPU
+		{2F0731BE-904F-4665-A95B-89175F33E8ED}.AppStore|iPhone.Build.0 = Debug|Any CPU
+		{2F0731BE-904F-4665-A95B-89175F33E8ED}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{2F0731BE-904F-4665-A95B-89175F33E8ED}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{2F0731BE-904F-4665-A95B-89175F33E8ED}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{2F0731BE-904F-4665-A95B-89175F33E8ED}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{2F0731BE-904F-4665-A95B-89175F33E8ED}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{2F0731BE-904F-4665-A95B-89175F33E8ED}.Release|iPhone.Build.0 = Release|Any CPU
+		{2F0731BE-904F-4665-A95B-89175F33E8ED}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{2F0731BE-904F-4665-A95B-89175F33E8ED}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{F11C588E-087F-4101-AD9E-BF3FCADBCCAF}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{F11C588E-087F-4101-AD9E-BF3FCADBCCAF}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{F11C588E-087F-4101-AD9E-BF3FCADBCCAF}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{F11C588E-087F-4101-AD9E-BF3FCADBCCAF}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{F11C588E-087F-4101-AD9E-BF3FCADBCCAF}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{F11C588E-087F-4101-AD9E-BF3FCADBCCAF}.Debug|iPhone.Build.0 = Debug|iPhone
+		{F11C588E-087F-4101-AD9E-BF3FCADBCCAF}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{F11C588E-087F-4101-AD9E-BF3FCADBCCAF}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{F11C588E-087F-4101-AD9E-BF3FCADBCCAF}.Release|iPhone.ActiveCfg = Release|iPhone
+		{F11C588E-087F-4101-AD9E-BF3FCADBCCAF}.Release|iPhone.Build.0 = Release|iPhone
+		{F11C588E-087F-4101-AD9E-BF3FCADBCCAF}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{F11C588E-087F-4101-AD9E-BF3FCADBCCAF}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = mTouch\App\mTouchApp.csproj
+	EndGlobalSection
+EndGlobal
