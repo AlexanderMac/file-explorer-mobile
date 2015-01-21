@@ -1,4 +1,4 @@
-# FileExplorer
+FileExplorer
 ==================
 FileExplorer is a demo app, created with Xamarin, to display folders structure.
 
@@ -35,7 +35,7 @@ Screenshots
 License
 -------------
 This code available under the MIT License.
-See License.md for details.  
+See License for details.  
 
 
 Authors
