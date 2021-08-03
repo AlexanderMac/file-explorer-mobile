@@ -40,4 +40,4 @@ See License for details.
 
 Authors
 -------------
-**Alexander Mac** ([amatsibarov@gmail.com](mailto:amatsibarov@gmail.com))
+Alexander Max
