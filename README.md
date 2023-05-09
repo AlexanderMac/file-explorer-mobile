@@ -1,5 +1,5 @@
 # FileExplorer
-## WARNING :warning:: This repo is not maintained anymore
+## WARNING :warning:: This repo is not maintained anymore.
 
 FileExplorer is a demo app, created with Xamarin, to display folders structure.
 
